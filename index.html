@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Multi Step Register</title>
+</head>
+
+<body>
+    <div class="container flex justify-center align-center">
+        <div class="form-container">
+            <form class="gray-border bg-212936">
+                <div class="step-one">
+                    <div class="header">
+                        <h1 class="fw-500 c-E5E7EB fz-20">Register</h1>
+                    </div>
+                    <div class="information flex direct-column">
+                        <div class="name">
+                            <label class="c-A1A1A9  fz-12" for="name">Name</label>
+                            <input minlength="5" maxlength="18" autocomplete="given-name" type="text" name="input-name"
+                                id="name" class="c-E5E7EB input-style gray-border bg-212936"
+                                placeholder="Enter your name" required>
+                        </div>
+                        <div class="email">
+                            <label class="c-A1A1A9 fz-12" for="email">Email</label>
+                            <input autocomplete="email" type="email" name="input-email" id="email"
+                                class="c-E5E7EB input-style gray-border bg-212936" placeholder="Example@gmail.com"
+                                required>
+                        </div>
+                    </div>
+                    <div class="button-container flex justify-center">
+                        <input type="button" value="Continue" id="button-stepOne"
+                            class="continue-button fz-12 c-E5E7EB">
+                    </div>
+                </div>
+                <div class="step-two" hidden>
+                    <div class="header">
+                        <h1 class="fw-500 c-E5E7EB fz-20">Which topics are you interested in?</h1>
+                    </div>
+                    <div class="topic-choices flex direct-column">
+                        <div class="topic-one">
+                            <label for="software-development" class="input-style block fz-14 bg-394150 c-A1A1A9"><input
+                                    name="radio-radiotwo" value="Software Development" id="software-development"
+                                    type="checkbox">Software Development</label>
+                        </div>
+                        <div class="topic-two">
+                            <label for="user-experience" class="input-style block fz-14 bg-394150 c-A1A1A9"> <input
+                                    name="radio-radiotwo" value="User Experience" id="user-experience"
+                                    type="checkbox">User Experience</label>
+                        </div>
+                        <div class="topic-three">
+                            <label for="graphic-design" class="input-style block fz-14 bg-394150 c-A1A1A9"> <input
+                                    name="radio-radiotwo" value="Graphic Design" id="graphic-design"
+                                    type="checkbox">Graphic Design</label>
+                        </div>
+                    </div>
+                    <div class="button-container flex justify-center">
+                        <input type="button" value="Continue" id="button-stepTwo"
+                            class="continue-button fz-12 c-E5E7EB">
+                    </div>
+                </div>
+                <div class="step-three" hidden>
+                    <div class="header">
+                        <h1 class="fw-500 c-E5E7EB fz-20">Summary</h1>
+                    </div>
+                    <div class="information">
+                        <div class="name">
+                            <span id="name-span" class="c-A1A1A9">Name: </span>
+                        </div>
+                        <div class="email">
+                            <span id="email-span" class="c-A1A1A9">Email: </span>
+                        </div>
+                    </div>
+                    <div class="topics flex direct-column">
+                        <span class="c-A1A1A9">Topics:</span>
+                        <div class="list-topics">
+                            <ul class="flex direct-column">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="button-container flex justify-center">
+                        <input type="submit" value="Confirm" id="button-stepThree"
+                            class="continue-button fz-12 c-E5E7EB">
+                    </div>
+                </div>
+            </form>
+            <div class="step-container flex justify-center">
+                <span class="step c-394150 fz-12">Step <span id="step-number">1</span> of 3</span>
+                <div class="balls-container flex">
+                    <div id="ballOne" class="gray-ball bg-394150 selected"></div>
+                    <div id="ballTwo" class="gray-ball bg-394150"></div>
+                    <div id="ballThree" class="gray-ball bg-394150"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

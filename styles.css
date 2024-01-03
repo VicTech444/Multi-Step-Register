@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #121826;
+    max-width: 100%;
+    min-width: 320px;
+    background-image: radial-gradient( 
+    circle at 0% 0%, 
+    #652CD1 -30%, 
+    transparent 30%),
+    
+    radial-gradient(
+    circle at 100% 100%,
+    #652CD1 -30%, 
+    transparent 30%);
+}
+
+/* General css*/
+
+.gray-border {
+    border: 1px solid #4D5562;
+    border-radius: 15px;
+}
+.c-E5E7EB {
+    color: #E5E7EB;
+}
+
+.c-A1A1A9 {
+    color: #A1A1A9;
+}
+
+.c-121826 {
+    color: #121826;
+}
+
+.c-212936 {
+    color: #212936;
+}
+
+.c-394150 {
+    color: #394150;
+}
+
+.c-4D5562 {
+    color: #4D5562;
+}
+
+.bg-845EEE {
+    background-color: #845EEE;
+}
+
+.bg-652CD1 {
+    background-color: #652CD1;
+}
+
+.bg-212936 {
+    background-color: #212936;
+}
+
+.bg-394150 {
+    background-color: #394150;
+}
+
+.fz-20 {
+    font-size: 20px;
+}
+
+.fz-16 {
+    font-size: 16px;
+}
+
+.fz-14 {
+    font-size: 14px;
+}
+
+.fz-12 {
+    font-size: 12px;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.block{
+    display: block;
+}
+
+.flex {
+    display: flex;
+}
+
+.direct-column {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+}
+
+.input-style::placeholder, .input-style:focus {
+    font-weight: 400;
+}
+
+.input-style:focus {
+    border-color: #845EEE;
+}
+
+.input-style::placeholder {
+    color: #4D5562;
+}
+
+.input-style:valid {
+    background-color: #394150
+}
+
+.input-style {
+    padding: 14px;
+    margin: 8px 0 10px;
+    width: 100%;
+    border: 2px solid #4D5562;
+    border-radius: 12px;
+    outline: none;
+}
+
+.input-selected {
+    color: #E5E7EB;
+    border: 1px solid #845EEE;
+    font-weight: 400;
+}
+
+/* Specific css */
+
+.container {
+    height: 100vh;
+}
+
+form {
+    width: 450px;
+    padding: 40px;
+}
+
+.information {
+    margin: 30px 0;
+    row-gap: 15px;
+}
+
+.continue-button {
+    padding: 12px 40px;
+    border-radius: 20px;
+    border: none;
+    background-image: linear-gradient(#845EEE, #652CD1);
+}
+
+.done-selected, .selected, .input-selected {
+    background-color: #652CD1;
+}
+
+.selected {
+    box-shadow: 0 0 0 5px #845eee43;
+}
+
+/* Step Two */
+
+.topic-choices {
+    margin: 15px 0 30px;
+}
+
+.topic-choices .input-style{
+    border: 1px solid #4D5562;
+}
+
+.topic-choices .input-selected{
+    border: 1px solid #845EEE;
+}
+
+/*Step Three*/
+
+.step-three .information {
+    margin: 30px 0 20px;
+}
+
+.topics  {
+    row-gap: 10px;
+}
+
+.topics ul{
+    row-gap: 8px;
+}
+
+.topics ul li {
+    margin-left: 28px;
+}
+
+.step-three span span {
+    color: #E5E7EB;
+    font-weight: 600;
+}
+
+#button-stepThree {
+    margin-top: 40px;
+}
+
+/* Step label and gray-balls (No edit) */
+
+.step, .gray-ball {
+    margin-top: 15px;
+}
+
+.balls-container {
+    margin-left: 20px;
+    column-gap: 10px;
+}
+
+.gray-ball {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    align-self: center;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+    .form-container {
+        width: 100%;
+        padding: 30px;
+    }
+
+    form {
+        width: 100%;
+    }
+}
